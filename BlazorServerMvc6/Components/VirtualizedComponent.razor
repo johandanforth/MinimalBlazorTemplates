@@ -1,0 +1,22 @@
+﻿<h3>VirtualizedComponent</h3>
+<p>Rendering virtualized list with @IntList!.Count items.</p>
+
+<ul style="height: 300px; overflow-y: scroll">
+    <Virtualize Items="@IntList">
+        <li>@context</li>
+    </Virtualize>
+</ul>
+
+@code {
+    public List<int>? IntList { get; set; }
+
+    protected override void OnInitialized()
+    {
+        IntList = new List<int>();
+        for (int i = 0; i < 10000; i++)
+        {
+            IntList.Add(i);
+        }
+        base.OnInitialized();
+    }
+}

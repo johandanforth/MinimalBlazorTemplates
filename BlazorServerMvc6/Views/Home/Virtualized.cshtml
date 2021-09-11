@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Virtualized Component Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Virtualized Component</h1>
+    <p>Mvc page with a virtualized Blazor Server component</p>
+</div>
+
+<div class="row">
+    <div class="col">
+        <component type="typeof(VirtualizedComponent)" render-mode="ServerPrerendered" />
+    </div>
+</div>
+
