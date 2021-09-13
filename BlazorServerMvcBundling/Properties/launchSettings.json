@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "BlazorServerMvc": {
+    "BlazorServerMvcBundling": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

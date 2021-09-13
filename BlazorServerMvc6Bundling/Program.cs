@@ -15,7 +15,7 @@ if (!isDevelopment)
         pipeline.MinifyJsFiles("~/js/**/*.js");
         pipeline.MinifyCssFiles("~/css/**/*.css");
         pipeline.AddCssBundle("/css/bundle.css", "wwwroot/css/**/*.css").UseContentRoot();
-        pipeline.AddJavaScriptBundle("/js/bundle.js", "js/**/*.js");
+        pipeline.AddJavaScriptBundle("/js/bundle.js", "wwwroot/js/**/*.js").UseContentRoot();
     });
 
 var app = builder.Build();

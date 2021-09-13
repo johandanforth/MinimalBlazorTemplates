@@ -5,9 +5,16 @@ VisualStudioVersion = 17.0.31612.314
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorServerMvc", "BlazorServerMvc\BlazorServerMvc.csproj", "{68FC9DE6-99CB-4DD3-B140-B59E69B8EF56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorServerMvc6", "BlazorServerMvc6\BlazorServerMvc6.csproj", "{A501E781-098D-4A4E-AE8D-65604D442D2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorServerMvc6", "BlazorServerMvc6\BlazorServerMvc6.csproj", "{A501E781-098D-4A4E-AE8D-65604D442D2C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorServerMvc6Bundling", "BlazorServerMvc6Bundling\BlazorServerMvc6Bundling.csproj", "{80A1FCCD-E247-45E3-9B03-DCAC473072B0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorServerMvcBundling", "BlazorServerMvcBundling\BlazorServerMvcBundling.csproj", "{8034BC51-DE75-4B8A-9C3C-4CC988D0AA4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FE1CF6AE-36DC-4C53-A037-6F46C8A5BBAD}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +34,10 @@ Global
 		{80A1FCCD-E247-45E3-9B03-DCAC473072B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80A1FCCD-E247-45E3-9B03-DCAC473072B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80A1FCCD-E247-45E3-9B03-DCAC473072B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8034BC51-DE75-4B8A-9C3C-4CC988D0AA4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8034BC51-DE75-4B8A-9C3C-4CC988D0AA4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8034BC51-DE75-4B8A-9C3C-4CC988D0AA4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8034BC51-DE75-4B8A-9C3C-4CC988D0AA4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

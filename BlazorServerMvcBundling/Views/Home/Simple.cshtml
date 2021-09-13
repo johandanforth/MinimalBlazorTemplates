@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Simple Component Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Simple Component</h1>
+    <p>Mvc page with a simple Blazor Server component</p>
+</div>
+
+<div class="row">
+    <div class="col">
+        <component type="typeof(SimpleComponent)" render-mode="ServerPrerendered" />
+    </div>
+</div>
+
+

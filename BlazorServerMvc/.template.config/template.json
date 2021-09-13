@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "@johandanforth",
+  "classifications": ["Web","MVC","Blazor"],
+  "identity": "MinimalBlazorServerMvc - 1",
+  "name":"Minimal ASP.NET Core MVC project with Blazor Server support",
+  "shortName": "minimalblazorservermvc",
+  "preferNameDirectory": true,
+  "sourceName": "BlazorServerMvc",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
