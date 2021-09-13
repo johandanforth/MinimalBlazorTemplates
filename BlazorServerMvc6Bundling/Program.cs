@@ -9,14 +9,13 @@ services.AddRazorPages();
 services.AddServerSideBlazor();
 services.AddMvc();
 
-if (!isDevelopment)
-    services.AddWebOptimizer(pipeline =>
-    {
-        pipeline.MinifyJsFiles("~/js/**/*.js");
-        pipeline.MinifyCssFiles("~/css/**/*.css");
-        pipeline.AddCssBundle("/css/bundle.css", "wwwroot/css/**/*.css").UseContentRoot();
-        pipeline.AddJavaScriptBundle("/js/bundle.js", "wwwroot/js/**/*.js").UseContentRoot();
-    });
+services.AddWebOptimizer(pipeline =>
+{
+    pipeline.MinifyJsFiles("~/js/**/*.js");
+    pipeline.MinifyCssFiles("~/css/**/*.css");
+    pipeline.AddCssBundle("/css/bundle.css", "wwwroot/css/**/*.css").UseContentRoot();
+    pipeline.AddJavaScriptBundle("/js/bundle.js", "wwwroot/js/**/*.js").UseContentRoot();
+});
 
 var app = builder.Build();
 
@@ -29,10 +28,11 @@ else
 {
     app.UseExceptionHandler("/Error");
     app.UseHsts();
-    app.UseWebOptimizer();
 }
 
+
 app.UseHttpsRedirection();
+app.UseWebOptimizer();
 app.UseStaticFiles();
 app.UseRouting();
 app.MapBlazorHub();
